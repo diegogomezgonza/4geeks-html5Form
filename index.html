@@ -15,12 +15,12 @@
   <body>
     <!-- Formulario -->
       <div class="container p-5">
-        <form class="m-3 border border-2 rounded w-75">
+        <form class="form-control m-3 border border-3 rounded w-75" method="post">
         <h2 class="bg-light border p-3">Payment for example</h2>
         <!-- Dinero -->
         <div class="row p-3">
           <div class="col-5">
-            <label class="mb-2" for="exampleInputEmail1">Card #</label>
+            <label class="mb-2" for="exampleInputEmail1"><strong>Card #</strong></label>
             <input
               type="text"
               class="form-control"
@@ -31,7 +31,7 @@
             />
           </div>
           <div class="col-3">
-            <label class="mb-2" for="exampleInputEmail1">CVC #</label>
+            <label class="mb-2" for="exampleInputEmail1"><strong>CVC #</strong></label>
             <input
               type="text"
               class="form-control"
@@ -42,7 +42,7 @@
             />
           </div>
           <div class="col-4">
-            <label for="basic-url" class="form-label ms-2 mb-2">Amount</label>
+            <label for="basic-url" class="form-label ms-2 mb-2"><strong>Amount</strong></label>
             <div class="input-group mb-3">
               <span class="input-group-text bg-transparent border-0">$</span>
               <input type="number" class="form-control" aria-label="Amount" required />
@@ -52,7 +52,7 @@
         <!-- Nombre y apellidos -->
         <div class="row p-3">
           <div class="col-6">
-            <label class="mb-2" for="exampleInputEmail1">First name</label>
+            <label class="mb-2" for="exampleInputEmail1"><strong>First name</strong></label>
             <input
               type="text"
               class="form-control"
@@ -62,7 +62,7 @@
             />
           </div>
           <div class="col-6">
-            <label class="mb-2" for="exampleInputEmail1">Last name</label>
+            <label class="mb-2" for="exampleInputEmail1"><strong>Last name</strong></label>
             <input
               type="text"
               class="form-control"
@@ -75,7 +75,7 @@
         <!-- Localidad -->
         <div class="row p-3">
           <div class="col-6">
-            <label class="mb-2" for="exampleInputEmail1">City</label>
+            <label class="mb-2" for="exampleInputEmail1"><strong>City</strong></label>
             <input
               type="text"
               class="form-control"
@@ -86,7 +86,7 @@
           </div>
 
           <div class="col-3">
-            <label class="mb-2" for="stateSelect">State</label>
+            <label class="mb-2" for="stateSelect"><strong>State</strong></label>
             <select class="form-select" aria-label="Default select example">
                 <option selected>Pick a state</option>
                 <option value="1">One</option>
@@ -95,7 +95,7 @@
               </select>
           </div>
           <div class="col-3">
-            <label class="mb-2" for="exampleInputEmail1">Postal Code</label>
+            <label class="mb-2" for="exampleInputEmail1"><strong>Postal Code</strong></label>
             <input
               type="text"
               class="form-control"
@@ -108,37 +108,36 @@
         <!-- Payment -->
         <div class="row p-3">
             <div class="col-6">
-              <label class="mb-2" for="exampleInputEmail1">We accept:</label>
-              <div class="bg-secondary p-2 border rounded" style="width: 64%;">
+              <label class="mb-2" for="exampleInputEmail1"><strong>We accept</strong></label>
+              <div class="bg-secondary p-2 border rounded" style="width: 70%;">
                 <div class="form-check form-check-inline ms-2">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
                     <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
                     <i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" required>
                     <i class="fa-brands fa-cc-diners-club" style="color: #ffffff;"></i>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" required>
                     <i class="fa-regular fa-credit-card" style="color: #ffffff;"></i>
                   </div>
               </div>
             </div>
             <div class="col-6">
-                <label class="mb-2" for="exampleFormControlTextarea1">Message</label>
+                <label class="mb-2" for="exampleFormControlTextarea1"><strong>Message</strong></label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
           </div>
-        <div class="row p-3">
-            <div class="col-12 bg-light d-flex flex-row-reverse gap-2 p-3">
-                <button type="button" class="btn btn-primary">Send</button>
+          <!-- Footer -->
+            <div class="col-12 bg-light d-flex flex-row-reverse gap-2 p-3 border">
+                <button type="submit" value="Submit" class="btn btn-primary">Send</button>
                 <button type="button" class="btn btn-secondary">Cancel</button>
             </div>
-        </div>
       </div>
     </form>
       </div>
